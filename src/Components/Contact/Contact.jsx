@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="min-h-[85vh] ">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
       aspernatur sit eveniet libero aut, dolorum, obcaecati deserunt aperiam
       explicabo provident dolores facere, inventore qui! Autem tempore minus
