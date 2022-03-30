@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MenuAlt2Icon, PaperAirplaneIcon, XIcon } from "@heroicons/react/solid";
 
 import Navlinks from "../Navlinks/Navlinks";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,12 +15,12 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 h-20 md:flex justify-between items-center px-4 md:px-10 bg-gray-700">
       <div className="flex items-center justify-between h-20 ">
-        <div className="flex items-center ">
+        <Link to="/" className="flex items-center ">
           <PaperAirplaneIcon className="w-10 md:w-11 text-red-500"></PaperAirplaneIcon>
           <span className="text-5xl  font-mono font-bold ml-1">
             Web<span className="text-red-500">pro</span>
           </span>
-        </div>
+        </Link>
         <div
           className=" duration-500 transition-all md:hidden text-red-500"
           onClick={() => setOpenMenu(!openMenu)}
