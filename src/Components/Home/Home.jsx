@@ -8,7 +8,7 @@ const Home = () => {
     navLink(path);
   };
   return (
-    <div className="min-h-[81vh] flex justify-center flex-col items-center">
+    <div className="min-h-[80.7vh] flex justify-center flex-col items-center">
       <h2 className="text-6xl font-bold text-center">Welcome to CoinBase</h2>
 
       <button
