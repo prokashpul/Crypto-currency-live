@@ -3,8 +3,8 @@ import CoinInfo from "../CoinInfo/CoinInfo";
 import Spinner from "../Spinner/Spinner";
 
 const Coins = () => {
-  const [loading, setLoading] = useState(false);
   const [coins, setCoins] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     fetch(
