@@ -20,7 +20,9 @@ const CoinDetails = () => {
         <p className="capitalize text-xl ">Categories: {coin?.categories} </p>
         <p className="capitalize text-xl ">Rank: {coin?.market_cap_rank} </p>
         <p className="text-2xl font-bold">Price: </p>
-        <p className="underline">Name- Currency - usd - up/down</p>
+        <p className="underline">
+          Name- Currency - Total Coin - Last Price(usd)
+        </p>
         {coin?.tickers?.slice(0, 5)?.map((price) => (
           <p>
             {price.base} - {price.target} - {price?.converted_volume?.usd} -{" "}
