@@ -9,10 +9,12 @@ const Home = () => {
   };
   return (
     <div className="min-h-[80.7vh] flex justify-center flex-col items-center">
-      <h2 className="text-6xl font-bold text-center">Welcome to CoinBase</h2>
+      <h2 className="md:text-6xl text-4xl font-bold text-center">
+        Welcome to CoinBase
+      </h2>
 
       <button
-        className="bg-red-500 rounded-lg py-2 text-xl my-5 text-white px-4"
+        className="bg-red-500 hover:bg-red-700 rounded-lg py-2 text-xl my-5 text-white px-4"
         onClick={coin}
       >
         Explore Coins

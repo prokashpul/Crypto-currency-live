@@ -19,7 +19,7 @@ const CoinDetails = () => {
       {loading ? (
         <Spinner></Spinner>
       ) : (
-        <div className="flex flex-col-reverse  md:flex-row justify-center md:justify-between items-center gap-2 md:gap-4 w-[80%] mx-auto  min-h-[85vh]  md:max-w-3xl">
+        <div className="flex flex-col-reverse  md:flex-row justify-center md:justify-between items-center gap-2 md:gap-4 w-[80%] my-10 md:my-auto mx-auto  min-h-[80.7vh]  md:max-w-3xl">
           <div>
             <h2 className="capitalize text-3xl font-bold md:text-4xl ">
               {coin.name}
