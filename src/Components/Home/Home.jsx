@@ -9,8 +9,8 @@ const Home = () => {
   };
   return (
     <div className="min-h-[80.7vh] flex justify-center flex-col items-center">
-      <h2 className="md:text-6xl text-4xl font-bold text-center">
-        Welcome to CoinBase
+      <h2 className="md:text-6xl text-4xl font-bold text-center mb-5 md:mb-10">
+        Welcome to Coin<span className="text-red-500">Live.</span>
       </h2>
 
       <button
