@@ -5,7 +5,7 @@ import Spinner from "../Spinner/Spinner";
 const CoinDetails = () => {
   const { coinId } = useParams();
   const [coin, setCoin] = useState({});
-  const [loading, setLoading] = false;
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     fetch(`https://api.coingecko.com/api/v3/coins/${coinId}`)
