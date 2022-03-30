@@ -1,8 +1,8 @@
 # Crypto currency live React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ALive Site Link
 
-## Available Scripts
+> https://currency-live.netlify.app/
 
 ## netlify diploy
 
