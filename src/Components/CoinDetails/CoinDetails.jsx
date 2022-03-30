@@ -11,9 +11,25 @@ const CoinDetails = () => {
   }, [coinId]);
   console.log(coin);
   return (
-    <div className="flex justify-between gap-4 w-[80%] mx-auto  min-h-[85vh]">
+    <div className="flex flex-col-reverse  md:flex-row justify-center md:justify-between items-center gap-2 md:gap-4 w-[80%] mx-auto  min-h-[85vh]  md:max-w-3xl">
       <div>
-        <h2 className="capitalize">{coin.id}</h2>
+        <h2 className="capitalize text-3xl font-bold md:text-4xl ">
+          {coin.name}
+        </h2>
+        <h3 className="capitalize text-xl md:text-2xl ">{coin.id} </h3>
+        <p className="capitalize text-xl ">Categories: {coin?.categories} </p>
+        <p className="capitalize text-xl ">Rank: {coin?.market_cap_rank} </p>
+        <p className="text-2xl font-bold">Price: </p>
+        <p className="underline">Name- Currency - usd - up/down</p>
+        {coin?.tickers?.slice(0, 5)?.map((price) => (
+          <p>
+            {price.base} - {price.target} - {price?.converted_volume?.usd} -{" "}
+            {price?.converted_last?.usd}
+          </p>
+        ))}
+        <p className="capitalize text-xl ">
+          Origin: {coin.country_origin ? coin.country_origin : "Not Found"}{" "}
+        </p>
       </div>
       <img src={coin.image?.large} alt="" />
     </div>

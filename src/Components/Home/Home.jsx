@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Spinner from "../Spinner/Spinner";
 
 const Home = () => {
   const navLink = useNavigate();
